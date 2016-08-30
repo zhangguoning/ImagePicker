@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/root_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/pop_iamgepick_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/pop_iamgepick_camera_but"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="#f0f0f0"
+                    android:text="拍照"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#e5e3e0"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/pop_iamgepick_photo_but"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="#f0f0f0"
+                    android:text="从相册中选取"
+                    android:textColor="#333333"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#f3f3f3" />
+
+            <Button
+                android:id="@+id/pop_iamgepick_cancel_but"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="5dp"
+                android:background="#f0f0f0"
+                android:text="取消"
+                android:textColor="#333333"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ffffff"
+    
+    >
+
+ 
+
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f6"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:id="@+id/top_menu_rl"
+         >
+
+        <TextView
+            android:id="@+id/show_photo_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#4c4c49"
+            android:textSize="18dp"
+            android:text="照片" />
+
+        <TextView
+            android:id="@+id/show_photo_cancel_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:padding="3dp"
+            android:textColor="#4c4c49"
+            android:textSize="16dp"
+            android:text="取消" />
+
+        <ImageView
+            android:id="@+id/show_photo_back_iv"
+            android:layout_marginLeft="10dp"
+            android:padding="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/houtui_3x" />
+
+    </RelativeLayout>
+    <RelativeLayout
+	    android:id="@+id/showallphoto_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#edebe9"
+        android:padding="10dp"
+        
+         >
+
+		<TextView
+		    android:id="@+id/show_photo_preview_tv"
+		    android:padding="5dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textColor="#4c4c49"
+		    android:textSize="15dp"
+		    android:layout_centerVertical="true"
+		    android:text="预览"
+			android:visibility="gone"
+			/>
+
+
+		<TextView
+		    android:id="@+id/show_photo_sure_tv"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		   android:layout_alignParentRight="true"
+		     android:layout_marginRight="10dp"
+		     android:layout_centerVertical="true"
+		    android:paddingLeft="10dp"
+		    android:paddingRight="10dp"
+		    android:paddingTop="3dp"
+		    android:paddingBottom="3dp"
+		    android:background="@drawable/title_button_shape"
+		    android:textColor="#ffffff"
+		    android:textSize="13dp"
+		    android:text="确定(0)" />
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/showallphoto_myGrid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/showallphoto_bottom_layout"
+        android:layout_below="@id/top_menu_rl"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="2dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:verticalSpacing="10dp"
+        android:background="#ffffff" />
+
+    <ProgressBar
+        android:id="@+id/showallphoto_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
