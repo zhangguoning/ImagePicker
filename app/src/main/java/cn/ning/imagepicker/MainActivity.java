@@ -3,6 +3,7 @@ package cn.ning.imagepicker;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.GridView;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements CallBack.ImagePic
     private Button button ;
     private CheckBox checkbox ;
     private GridView gridView ;
+    private BaseAdapter adapter ; //用于选择完成后展示已选图片用的GridView的适配器，这里不在给出
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
