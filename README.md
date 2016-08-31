@@ -21,5 +21,4 @@
         manager.showImagePickerDialog();
 ```
         ![](https://github.com/zhangguoning/imagePicker/raw/master/imagepicker.gif)
-        ![](https://github.com/zhangguoning/customRuleView/raw/master/app/src/main/res/mipmap-hdpi/a.jpg)  
         
