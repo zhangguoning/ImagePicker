@@ -1,7 +1,7 @@
-# imagePicker
+# ImagePicker 图片选择器
 ![](https://github.com/zhangguoning/imagePicker/raw/master/imagepicker.gif)
 <br/>
-一个封装好的图片选择器模块，可以使用多选模式和单选模式两种，单选模式调用系统得图片选择功能，
+一个封装好的图片选择器模块，可以使用多选模式和单选模式两种，单选模式调用系统的图片选择功能，
 多选模式则调用自己定义的选择功能，再次选择时可以选择是否记录前面已选择过的图片。
 ```java
 //isMultiple  是否未为多选模式？  是：调用自己的多选选择器， 否：调用系统的图片选择器
