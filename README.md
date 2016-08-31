@@ -21,3 +21,4 @@
         manager.showImagePickerDialog();
 ```
         ![](https://github.com/zhangguoning/imagePicker/raw/master/imagepicker.gif)
+        
